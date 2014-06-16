@@ -1,0 +1,83 @@
+<include file="Public/init" 
+    title="{$pageinfo.title}" 
+    keywords="{$pageinfo.keywords}" 
+    description="{$pageinfo.description}"/>
+    
+    
+
+
+<include file="Public:head" />
+<include file="Public:topbar" />
+
+
+<div class="wraper">
+
+    <div class="common">
+    
+        <table class="loginbox">
+            <thead>
+                <tr>
+                    <th colspan="6">loginbox</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>name</td>
+                    <td>
+                        <input class="input-m" type="text">
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>password</td>
+                    <td>
+                        <input class="input-m" type="password">
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input class="input-s" type="text">
+                        <img src="">
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input class="input-s" type="button">
+                        <img src="">
+                    </td>
+                    <td></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6">loginbox.footer</td>
+                </tr>
+            </tfoot>
+        </table>
+        
+        
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<include file="Public:foot" />
+<script type="text/javascript">
+require(['src/sidebar'],function(sidebar){
+    sidebar.init();
+});
+    
+</script>
+<include file="Public:end" />

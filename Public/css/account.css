@@ -1,0 +1,14 @@
+/* account.css */
+
+
+.reg{}
+.reg input{ border:solid 1px #ccc; padding:5px; height: 24px; line-height: 24px; }
+.reg input[name='text']{ }
+.reg input[name='password']{ }
+.reg table tbody tr{ height: 50px; line-height: 50px;}
+.reg-lspan{ width: 160px; text-align: right; display: inline-block;}
+.reg-cspan{ width: 220px; margin-left: 10px;}
+.reg-cinput{width: 200px; }
+.reg-cspan-submit{ margin-left: 8px;}
+.reg-cimg-verify{ width: 100px; height: 36px; vertical-align: middle; margin-top: -3px; }
+.reg-cinput-verify{ width: 94px; }

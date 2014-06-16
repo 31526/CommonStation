@@ -1,0 +1,99 @@
+<include file="Public/init" 
+title="{$pageinfo.title}" 
+keywords="{$pageinfo.keywords}" 
+description="{$pageinfo.description}"/>
+    
+<include file="Public:head" />
+<include file="Public:topbar" />
+
+<div class="wraper">
+    
+
+    
+    <div class="common">
+
+        <!--▼::Account::reg-->
+        <div class="reg">
+            <form action="{:U('/account/register')}" method="post">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th colspan="5"> register </th>                                                
+                    </tr>                    
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span  class="reg-lspan">email</span></td>
+                        <td><span  class="reg-cspan"><input class="reg-cinput" type="text" id="js_email" name="email" /></span></td>
+                        <td><span  class="reg-rspan"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span  class="reg-lspan">nickname</span></td>
+                        <td><span  class="reg-cspan"><input class="reg-cinput" type="text" id="js_nickname" name="nickname" /></span></td>
+                        <td><span  class="reg-rspan"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span  class="reg-lspan">password</span></td>
+                        <td><span  class="reg-cspan"><input class="reg-cinput" type="password" id="js_password" name="password" /></span></td>
+                        <td><span  class="reg-rspan"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span  class="reg-lspan">verify</span></td>
+                        <td>
+                            <span  class="reg-cspan">
+                                <input class="reg-cinput-verify" type="text" id="js_verify" name="verify" />
+                                <img src="{:U('/Common/Verify')}" id="verifyimg" title="点击刷新" class="reg-cimg-verify" />
+                            </span>
+                        </td>
+                        <td><span  class="reg-rspan"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span  class="reg-lspan"></span></td>
+                        <td>
+                            <span  class="reg-cspan reg-cspan-submit">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </span>
+                        </td>
+                        <td><span  class="reg-rspan"></span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5">tfoot</td>
+                    </tr>
+                </tfoot>                
+            </table>
+
+            </form>
+        </div>
+        <!--▲::Account::reg-->
+        
+        
+    </div>
+    
+    
+
+</div>
+
+
+<table>
+<tr><td>年</td><td>制造商</td><td>型号</td><td>说明</td><td>价值</td></tr>
+<tr><td>1997</td><td>Ford</td><td>E350</td><td>"ac</td><td> abs</td><td> moon"</td><td>3000.00</td></tr>
+<tr><td>1999</td><td>Chevy</td><td>"Venture ""Extended Edition"""</td><td>""</td><td>4900.00</td></tr>
+<tr><td>1999</td><td>Chevy</td><td>"Venture ""Extended Edition</td><td> Very Large"""</td><td>""</td><td>5000.00</td></tr>
+<tr><td>1996</td><td>Jeep</td><td>Grand Cherokee</td><td>"MUST SELL!</td></tr>
+<tr><td>air</td><td> moon roof</td><td> loaded"</td><td>4799.00</td></tr>
+</table>
+
+
+
+
+
+
+
+
+<include file="Public:foot" />
+<script type="text/javascript">
+require(['src/home/account/reg']);
+</script>
+<include file="Public:end" />

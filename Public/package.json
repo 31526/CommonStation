@@ -1,0 +1,18 @@
+{
+  "name": "commonStation",
+  "version": "0.1.0",
+  "author": "njbm",
+  "private" : true,
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-cssmin":   "*",    
+    "grunt-contrib-concat":   "*",
+    "grunt-contrib-watch":    "*",
+    "grunt-cssc":             "*",
+    "grunt-htmlhint":         "*",
+    "matchdep":               "*"
+  }
+}

@@ -1,0 +1,45 @@
+<include file="Public/init" 
+    title="{$pageinfo.title}" 
+    keywords="{$pageinfo.keywords}" 
+    description="{$pageinfo.description}"/>
+    
+    
+<include file="Public:head" />
+<include file="Public:topbar" />
+
+ACTION_NAME
+
+
+<div class="wraper">
+    
+    <div class="header"></div>
+
+    <div class="banner"></div>
+    
+    <div class="module"></div>
+    
+    <div class="module"></div>
+    
+    <div class="module"></div>
+    
+    <div class="module"></div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<include file="Public:foot" />
+<script type="text/javascript">
+require(['src/sidebar'],function(sidebar){
+    sidebar.init();
+});
+    
+</script>
+<include file="Public:end" />

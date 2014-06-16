@@ -1,0 +1,191 @@
+/* admin.css */
+
+
+/*
+YUI 3.17.1 (build 0eb5a52)
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+
+body{font-family: Verdana, Arial,\5FAE\8F6F\96C5\9ED1;}
+
+body, td, input, textarea, select, button {
+	color: #555;
+	font: 12px "Lucida Grande", Verdana, Lucida, Helvetica, Arial, 'Simsun', sans-serif;
+}
+
+a:link,
+a:active,
+a:visited{ text-decoration: none; color:#666;}
+a:hover{ color: #333;}
+
+.z{ float: left; }
+.y{ float: right;}
+.hide{ display: none;}
+
+.notice{ position: absolute; z-index: 100; width: 100%; text-align: center; }
+.notice a {
+	display: inline-block;
+	padding: 5px 10px;
+	border: solid #CCC;
+	border-width: 0 1px 1px;
+	background: #FEFEE9;
+	color: red;
+	box-shadow: 0 0 5px #B1B1B1;
+	border-radius:0 0 3px 3px;
+}
+
+.mainhd {
+	position: relative;
+	overflow: hidden;
+	text-align: left;
+	height: 90px;
+	line-height: 88px;
+	background: url(../img/admin/bg_repx.gif) repeat-x;
+}
+.logo{
+	display: block;
+	text-indent: -9999px;
+	width: 135px;
+	height: 80px;
+	background: url(../img/admin/logo2.gif) no-repeat 15px 13px;
+}
+
+.menu {
+	position: absolute;
+	z-index: 2;
+	top: 14px;
+	left: 159px;
+	width: 100%;
+	height: 75px;
+}
+
+.menu ul {
+	overflow: hidden;
+	position: relative;
+	z-index: 4;
+	font-size: 14px;
+}
+
+.menu li {
+	float: left;
+	height: 43px;
+	line-height: 43px;
+	background: url(../img/admin/btn_block.gif) right -115px no-repeat;
+}
+.menu li em { display: block; }
+.menu li a {
+	padding: 5px 5px;
+	color: #639BB0;
+	font-weight: 700;
+}
+.menu li.menuon {
+	line-height: 33px;
+	background: url(../img/admin/btn_block.gif) no-repeat;
+}
+.menu li.menuon em {
+	display: block;
+	background: url(../img/admin/btn_block.gif) right -50px no-repeat;
+}
+.menu li.menuon em a {
+	display: block;
+	background: url(../img/admin/btn_block.gif) center bottom no-repeat;
+	color: #FFF;
+}
+.navbd {
+	overflow: hidden;
+	clear: both;
+	position: absolute;
+	z-index: 3;
+	top: 38px;
+	width: 100%;
+	height: 5px;
+	background: #09C;
+}
+.uinfo {
+	position: absolute;
+	z-index: 4;
+	line-height: 32px;
+	top: 10px;
+	right: 15px;
+}
+
+
+.currentloca {
+	clear: both;
+	height: 32px;
+	border-left: 1px solid #B5CFD9;
+}
+
+.currentloca p {
+	padding-left: 10px;
+	line-height: 25px;
+	border-top: 5px solid #FFF;
+	border-bottom: 2px solid #FFF;
+	border-left: 1px solid #FFF;
+	background: #F2F9FD;
+}
+
+
+
+.menutd { background: #F2F9FD url(../img/admin/bg_repx_h.gif) right top no-repeat; }
+.nav{  position: relative; z-index: 20; width: 160px; }
+.nav ul {
+	position: absolute;
+	top: 10px;
+	right: 7px;
+	list-style: none;
+	width: 153px;
+	background: #F2F9FD url(../img/admin/bg_repx_h.gif) no-repeat 5px -20px;
+}
+
+.nav li {
+	margin: 3px 0;
+	width: 153px;
+	height: auto !important;
+	height: 25px;
+	overflow: hidden;
+}
+.nav li a {
+	display: block;
+	padding: 4px 0 3px 30px;
+	background: url(../img/admin/bg_repno.gif) no-repeat 15px -43px;
+	color: #666;
+	white-space: nowrap;
+}
+
+.nav li em {
+	position: absolute;
+	cursor: pointer;
+	margin: -1px 0 0 -20px;
+	width: 16px;
+	height: 16px;
+	visibility: hidden;
+	background: #EAF4FB url(../img/admin/newwin.gif) no-repeat;
+}
+
+
+.nav li a:hover {
+	text-decoration: none;
+	background: #EAF4FB url(../img/admin/bg_repno.gif) no-repeat 15px -43px;
+	color: #2366A8;
+}
+
+.nav li a:hover em, .nav li a.tabon:hover em {
+	visibility: visible;
+}
+
+.masktd {
+	padding-top: 9px;
+	background: url(../img/admin/bg_repx_hb.gif) repeat-x;
+}
+
+
+.nav li a.tabon, .nav li a.tabon:hover {
+	text-decoration: none;
+	background: #DEEFFA url(../img/admin/bg_repno.gif) no-repeat 15px -43px;
+	color: #2366A8;
+}
